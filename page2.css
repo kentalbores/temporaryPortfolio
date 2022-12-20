@@ -1,0 +1,186 @@
+body{
+    background-image: url("page2bg.jpg");
+    background-size: 100vw 100vh;
+    position: static;
+    background-attachment: fixed;
+    padding-bottom: 190vh;
+}
+.leftpart{
+    width: 25vw;
+    height: 800px;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+}
+.leftpart p{
+    color: rgb(78, 78, 78);
+    margin: 90px 5px 0 5px;
+}
+.rightpart{
+    border: none;
+    width: 60vw;
+    height: 1200px;
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    box-shadow: -10px -10px 40px rgb(0, 0, 0);
+}
+.toppart{
+    background-color: rgba(255, 255, 255, 0.418);
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 0px;
+}
+.botpart{
+    background-color: rgba(0, 0, 0, 0.486);
+    width:100%;
+    height: 75%;
+    position: absolute;
+    bottom: 1px;
+    color: white;
+}
+.botpart p{
+    padding:40px;
+    font-size: 120%;
+    font-family: cursive;
+    text-shadow: 0 0 10px white;
+}
+.botpart span{
+    margin-left: 50px;
+}
+.toppart img{
+    position: absolute;
+    width: 40%;
+    right: 1%;
+    bottom: 0px;
+}
+.details{
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    
+    .details{
+        width: 100%;
+    }
+    .rightpart{
+        right: 10px;
+    }
+    .details{
+        z-index: 2;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .toppart{
+        height: 17%;
+        padding-top: 0;
+    }
+    .botpart{
+        height: 83%;
+    }
+    .details h1{
+        margin-top: 0;
+    }
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.but1:hover, .but2:hover, .but3:hover{
+    cursor: pointer;
+    box-shadow: 7px 7px 10px  black;
+    border-top: none;
+    border-left: none;
+    transition: .7s;
+    text-shadow: 3px 3px 20px cyan;
+    color: rgb(31, 240, 255);
+}
+.but1, .but2, .but3{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 0 30px 0 30px;
+    box-shadow: inset 5px 5px 10px black;
+    border-bottom: none;
+    border-right: none;
+    color: black;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 3px 3px 20px rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+@media screen and (max-width:700px ) {
+    .but1, .but2, .but3{
+        margin: 0 1px 0 1px;
+        width: 100px;
+        height: 50px;
+    }
+    .buttons{
+        
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .but1, .but2, .but3{
+        margin-top: 5px;
+
+    }
+}
+@media screen and (max-width:380px){
+    .toppart{
+        height: 25%;
+        padding-top: 0;
+    }
+    .botpart{
+        height: 75%;
+    }
+}
+@media screen and (max-width:840px){
+    .rightpart{
+        height: 800px;
+    }
+    .rightpart p{
+        font-size: 10px;
+    }
+    .toppart{
+        height: 40%;
+    }
+    .botpart{
+        height: 60%;
+    }
+}
+@media screen and (max-width:840px){
+    .rightpart{
+        height: 1000px;
+    }
+}
+@media screen and (max-width:500px){
+    .rightpart{
+        height: 1400px;
+    }
+}
